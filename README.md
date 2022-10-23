@@ -1,2 +1,3 @@
 # MyBugbountyMethodology
-##hello
+
+> Password reset link not expiring
