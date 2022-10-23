@@ -1,5 +1,7 @@
 # MyBugbountyMethodology
 
+# Password reset/forgot
+
 - Password reset link not expiring
 - No rate limiting on password reset
     > Start the burp suite and intercept the password reset request
