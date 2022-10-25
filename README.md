@@ -46,4 +46,8 @@
     
     > Host: attacker.com
    
-   
+# Oauth2 vulnerabilities
+
+- CSRF-Improper handling of state parameter
+
+- Weak validation of `redirect-uri` parameter to aut_code leak, xss, open ridirects, etc.
