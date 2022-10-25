@@ -48,6 +48,14 @@
    
 # Oauth2 vulnerabilities
 
-- CSRF-Improper handling of state parameter
+- Implicit-grant type vulnerable to manipulating emails 
 
-- Weak validation of `redirect-uri` parameter to aut_code leak, xss, open ridirects, etc.
+- CSRF-Improper handling of `state` parameter
+
+- Weak validation of `redirect-uri` parameter to auth_code leak, xss, open ridirects, etc.
+
+- client_secret_key, access_token leaked
+
+- Pre Account Takeover 
+    > If the application does not require email verification on account creation, try creating an account with a victim’s email address and attacker password       before the victim has registered. If the victim then tries to register or sign in with a third party, such as Google, it’s possible the application           will do a lookup, see that email is already registered, then link their Google account to the attacker created account. This is a “pre account               takeover” where an attacker will have access to the victim’s account if they created it prior to the victim registering 
+
