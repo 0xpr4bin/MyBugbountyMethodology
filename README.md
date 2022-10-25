@@ -59,7 +59,9 @@
 - Pre Account Takeover 
     > If the application does not require email verification on account creation, try creating an account with a victim’s email address and attacker password       before the victim has registered. If the victim then tries to register or sign in with a third party, such as Google, it’s possible the application           will do a lookup, see that email is already registered, then link their Google account to the attacker created account. This is a “pre account               takeover” where an attacker will have access to the victim’s account if they created it prior to the victim registering 
 
-# CSRF/Clickjacking on `my profile` sensitive action like `delete account, password/email change`
+# CSRF/Clickjacking 
+- O`n my profile` sensitive action like `delete account, password/email change`
 
-# File upload vulnerabilities on profile pic, and others to RCE, XXE, XSS,etc.
+# File upload vulnerabilities 
+- On profile pic, and others to `RCE, XXE, XSS,etc.`
  
