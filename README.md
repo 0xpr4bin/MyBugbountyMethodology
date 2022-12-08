@@ -50,9 +50,9 @@
 
 - Implicit-grant type vulnerable to manipulating emails 
 
-- CSRF-Improper handling of `state` parameter
+- CSRF Improper handling of `state` parameter
 
-- Weak validation of `redirect-uri` parameter to auth_code leak, xss, open ridirects, etc.
+- Weak validation of `redirect-uri` parameter to auth_code leak, xss, open redirects, etc.
 
 - client_secret_key, access_token leaked
 
