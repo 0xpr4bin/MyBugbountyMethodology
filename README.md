@@ -59,6 +59,21 @@
 - Pre Account Takeover 
     > If the application does not require email verification on account creation, try creating an account with a victim’s email address and attacker password       before the victim has registered. If the victim then tries to register or sign in with a third party, such as Google, it’s possible the application           will do a lookup, see that email is already registered, then link their Google account to the attacker created account. This is a “pre account               takeover” where an attacker will have access to the victim’s account if they created it prior to the victim registering 
 
+# JWT Authorization/Authentication bypass vulnerablities
+-  Unverified signature bypass (changing value in payloads of jwt)
+
+- Flawed signature bypass (changing "alg" to "none")
+
+- Weak Signing of key (HS256) 
+    > Bruteforcing private key and resign the token 
+
+- jwk/jku Header parameter injection in jwt 
+
+- Kid header path traversal (HS256)
+
+- Jwt algorithm confusion attacks
+    > Retrieving jwt public key and converting into secret key format and changing alg to Hs256 for confusion
+
 # CSRF/Clickjacking 
 - On `my profile` sensitive action like `delete account, password/email change`
 
