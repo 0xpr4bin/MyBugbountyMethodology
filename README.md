@@ -72,7 +72,7 @@
 - Kid header path traversal (HS256)
 
 - Jwt algorithm confusion attacks
-    > Retrieving jwt public key and converting into secret key format and changing alg to Hs256 for confusion
+    > Retrieving jwt public key and converting into secret key format and changing alg to HS256 for confusion
 
 # CSRF/Clickjacking 
 - On `my profile` sensitive action like `delete account, password/email change`
